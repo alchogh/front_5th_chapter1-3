@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-interface useInfiiteScrollProps {
+interface useInfiniteScrollProps {
   targetRef: React.RefObject<Element>;
   callback: () => void;
   options?: IntersectionObserverInit;
@@ -10,7 +10,7 @@ export const useInfiniteScroll = ({
   targetRef,
   callback,
   options,
-}: useInfiiteScrollProps) => {
+}: useInfiniteScrollProps) => {
   useEffect(() => {
     const target = targetRef.current;
     if (!target) return;

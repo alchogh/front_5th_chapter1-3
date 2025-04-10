@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from "react";
 import { renderLog } from "../utils";
-import { useInfiniteScroll } from "../@lib/hooks/";
+
 import { Item } from "../types";
 import { useThemeContext } from "../contexts";
-import { useRef } from "../@lib";
+import { useRef, useInfiniteScroll } from "../@lib";
 
 // ItemList 컴포넌트
 export const ItemList: React.FC<{
